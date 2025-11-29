@@ -8,7 +8,9 @@ class Settings(BaseSettings):
     API_PORT: int = 8000
     CORS_ORIGINS: List[str] = ["http://localhost:3000"]
     
-    class Config:
-        env_file = "../.env"
+    model_config = {
+        "env_file": "../.env",
+        "extra": "ignore"
+    }
 
 settings = Settings()
