@@ -1,6 +1,6 @@
 # Tenra
 
-Measure and optimize the environmental impact of LLM workloads.
+Measure and optimize the environmental impact of AI workloads.
 
 ## Quick Start
 
