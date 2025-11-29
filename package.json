@@ -1,0 +1,14 @@
+{
+  "name": "tenra",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "cd backend && source venv/bin/activate && uvicorn src.main:app --reload --port 8000",
+    "dev:web": "cd frontend && npm run dev",
+    "db:up": "docker-compose up -d",
+    "db:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
